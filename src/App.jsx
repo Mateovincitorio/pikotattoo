@@ -5,6 +5,7 @@ import Hero from './components/Hero.jsx'
 import Trabajos from './components/Trabajos.jsx'
 import Ubicacion from './components/Ubicacion.jsx'
 import Servicios from './components/Servicios.jsx'
+import QuienSoy from './components/QuienSoy.jsx'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Ubicacion />
       <Servicios />
+      <QuienSoy />
     </>
   )
 }
