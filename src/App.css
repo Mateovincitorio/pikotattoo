@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Bebas+Neue&family=Courgette&family=Inconsolata:wght@200..900&family=Oswald:wght@200..700&family=Playwrite+RO:wght@100..400&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Sekuya&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+  overflow-x: hidden;
+}
+
+body{
+  background-color: #121212;
+}
+
+html, #root {
+  background-color: #121212;
+}
+
+
+

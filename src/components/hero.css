@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Bebas+Neue&family=Courgette&family=Inconsolata:wght@200..900&family=Oswald:wght@200..700&family=Playwrite+RO:wght@100..400&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Sekuya&display=swap');
+
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  /*background-image: url('/portadaOrig.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;*/
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contenedor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 50%;
+}
+
+.imagen img{
+  width: 100%;
+  height: auto;
+  
+}
+
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center top, rgba(255, 255, 255, 0.08), transparent 35%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.52));
+  pointer-events: none;
+}
+
+.title { 
+  position: relative;
+  left: -50px;
+  color: #f6e4bf;
+  margin: 0;
+  text-align: justify;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 500;
+  font-size: 6rem !important;
+  line-height: 1.02;
+  max-width: 85%;
+  text-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+  letter-spacing: 1px !important;
+  white-space: normal;
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
+.subtitle { 
+  color: rgba(255, 245, 215, 0.92);
+  margin: 22px 0 0;
+  text-align: justify;
+   text-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+   font-size: clamp(1.2rem, 2vw, 1.6rem);
+   max-width: 85%;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1rem, 1.8vw, 1.4rem);
+  max-width: 760px;
+  line-height: 1.35;
+  letter-spacing: 0.15em;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, rgba(245, 184, 86, 0.98), rgba(167, 80, 22, 0.95));
+  color: #121212;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 16px 38px;
+  border-radius: 999px;
+  cursor: pointer;
+  margin-top: 34px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.cta-button:hover {
+  background: linear-gradient(135deg, rgba(254, 204, 117, 1), rgba(150, 54, 18, 0.98));
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 24px 52px rgba(0, 0, 0, 0.32);
+}
+
+.no-bg{
+   background: transparent;
+  color: rgba(245, 184, 86, 0.98);
+   background-clip: text;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 16px 38px;
+  border-radius: 999px;
+  cursor: pointer;
+  margin-top: 34px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.no-bg:hover{
+  background: transparent;
+  color: rgba(254, 204, 117, 1);
+   background-clip: text;
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 24px 52px rgba(0, 0, 0, 0.32);
+}
+
+/* Animación personalizada de pulse sin cambiar tamaño */
+@keyframes customPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(54, 31, 0, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(54, 31, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(54, 31, 0, 0);
+  }
+}
+
+.cta-button.animate__pulse {
+  animation: customPulse 2.5s infinite !important;
+}
+
+.btns{
+  display: flex;
+  gap: 24px;
+}
