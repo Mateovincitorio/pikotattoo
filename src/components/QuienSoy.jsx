@@ -60,20 +60,30 @@ const QuienSoy = () => {
       <div className="quienSoy-body">
         <img
           data-aos="fade-right"
-          src="/imgwhoami.png"
+          src="/quiensoy.jpeg"
           alt="Pablo, tatuador"
           className='imgQuienSoy'
           ref={imgRef}
           onLoad={() => AOS.refresh()}
         />
         <div className="quienSoy-text " data-aos="fade-left">
-          <p className='pQuienSoy'>Soy Pablo, tatuador apasionado por convertir ideas y recuerdos en tatuajes con significado. Cada diseño nace de una conversación cercana, cuidando cada detalle para que la pieza sea una expresión auténtica de tu historia.</p>
-          <p className='pQuienSoy'>Mi estilo abarca desde líneas limpias y minimalistas hasta trabajos detallados y realistas. Con experiencia y dedicación constante, ofrezco un servicio profesional, personalizado y cálido para quienes quieren llevar su historia en la piel.</p>
-          <button ref={btnRef} className="cta-button animate__animated animate__pulse"><a href="#contact" className="cta-link">Contact me</a></button>
+          <p className='pQuienSoy'>I’m Piko, an Argentine tattoo artist with over seven years of experience.</p>
+          <p className='pQuienSoy'>What started as a passion became my way of life. I specialize in Black & Grey, Patchwork, and Sticker styles, creating fully customized designs tailored to your body, your style, and the story you want to tell.
+</p>
+          <p className='pQuienSoy'>At Piko Tattoo Studio, you’ll find a professional, safe, and welcoming environment where every detail matters—from the first consultation to the final result.
+</p>
+          <p className='pQuienSoy'>Art on your skin. Always.</p>
+          <button ref={btnRef} className="cta-button animate__animated animate__pulse"><a href="#contact" className="cta-link">Request a quote</a></button>
         </div>
       </div>
     </section>
   )
 }
+
+
+
+
+
+
 
 export default QuienSoy

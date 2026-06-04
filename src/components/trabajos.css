@@ -2,26 +2,26 @@
 
 
 .h1Work{
-    font-size: 4rem;
-  color: #f6e4bf ;
+    font-size: clamp(2rem, 6vw, 4rem);
+  color: #f6e4bf;
   overflow: hidden;
   font-family: 'Bebas Neue', sans-serif;
   text-decoration: underline;
 }
 
 .trabajos{
-
-  width: 70%;
-  margin:  auto;
-  padding: 0 40px;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 28px;
   border-radius: 24px;
 }
 
 .h2Work{
-    color: #f6e4bf !important;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 3.5rem;
-    overflow: hidden;
+  color: #f6e4bf;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.6rem, 4.2vw, 3.5rem);
+  overflow: hidden;
 }
 
 .realismo{
@@ -32,4 +32,9 @@
     font-size: 1.2rem;
     color: #f6e4bf ;
     font-family: 'Bebas Neue', sans-serif;
+}
+
+@media (max-width: 520px) {
+  .trabajos { padding: 0 14px; }
+  .pWork { font-size: 1rem; }
 }

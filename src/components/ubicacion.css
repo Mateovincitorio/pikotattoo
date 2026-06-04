@@ -46,10 +46,15 @@
 }
 
 .titulo-ubicacion{
-    font-size: 1.8rem;
+        font-size: clamp(1rem, 3vw, 1.8rem);
     overflow: hidden;
       font-family: 'Bebas Neue', sans-serif;
 
+
+@media (max-width: 760px) {
+    .ubicacion, .horario, .google { flex: 1 1 100%; width: 100%; height: auto; }
+    .contenedor-ubicacion { padding: 24px 12px; gap: 12px; }
+}
    
 }
 

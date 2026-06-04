@@ -14,10 +14,26 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  // Cierra el menú al hacer scroll LEER PARA ENTENDER
+  useEffect(() => {
+    const closeOnScroll = () => {
+      const collapse = document.getElementById('navbarNavDropdown');
+      const toggler = document.querySelector('.navbar-toggler');
+      if (collapse && collapse.classList.contains('show')) {
+        collapse.classList.remove('show');
+        if (toggler) toggler.setAttribute('aria-expanded', 'false');
+      }
+    };
+    window.addEventListener('scroll', closeOnScroll, { passive: true });
+    return () => window.removeEventListener('scroll', closeOnScroll);
+  }, []);
+
   return (
     <nav className={`navbar navbar-expand-lg navbar-dark navbar-sticky ${scrolled ? 'scrolled' : ''}`}>
       <div className="container-fluid">
         <a className="navbar-brand Logo" href="#"><img className='logoimg' src={logo} alt="Logo" /></a>
+
+{/*LEER PARA ENTENDER*/}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>

@@ -10,7 +10,8 @@
 }
 
 .formulario {
-  width: min(640px, 100%);
+  width: 100%;
+  max-width: 640px;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 28px;
@@ -168,4 +169,19 @@
     justify-self: stretch;
     padding: 16px;
   }
+}
+
+/* Tablet and small-desktop adjustments */
+@media (max-width: 900px) {
+  #contacto { padding: 48px 18px; }
+  .formulario { padding: 36px 26px; }
+  .formulario h2 { font-size: clamp(1.6rem, 3.2vw, 2rem); }
+  .formulario textarea { min-height: 150px; }
+  .preview-image { max-height: 200px; }
+}
+
+@media (max-width: 420px) {
+  .file-upload-button { padding: 12px 14px; min-height: 48px; }
+  .preview-image { max-height: 160px; border-radius: 14px; }
+  .formulario input, .formulario textarea { font-size: 0.95rem; }
 }

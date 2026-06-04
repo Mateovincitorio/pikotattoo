@@ -54,7 +54,7 @@ const Hero = () => {
         <h1 className="title">Art in your Body</h1>
         <p className="subtitle">Professional and personalized body art</p>
         <div className="btns">  
-        <button ref={btnRef} className="cta-button animate__animated animate__pulse"><a href="#contact" className="cta-link">Contact me</a></button>
+        <button ref={btnRef} className="cta-button animate__animated animate__pulse"><a href="#contact" className="cta-link">Get my quote</a></button>
         <button className="cta-button animate__animated animate__pulse no-bg"><a href="#gallery" className="cta-link">See my gallery</a></button>
         </div>
         </div>

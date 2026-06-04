@@ -21,8 +21,8 @@
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 2.2rem !important;
-  margin-left: 16px;
+  font-size: clamp(1.5rem, 2.2vw, 2.5rem) !important;
+  margin-left: 12px;
 }
 
 .navbar-active{
@@ -33,4 +33,73 @@
 .navbar.navbar-sticky.scrolled{
   background-color: rgba(190, 182, 141, 0.544) !important;
   box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+@media (max-width: 900px) {
+  .nav-link { margin-left: 10px; font-size: clamp(0.9rem, 2.4vw, 1.2rem); }
+  .logoimg { height: 44px; }
+}
+
+@media (max-width: 520px) {
+  .nav-link { display: block; margin: 8px 0; padding: 8px 12px; }
+  .navbar .container, .navbar .navbar-collapse { padding-left: 8px; padding-right: 8px; }
+  /* Mobile: make collapsed menu readable with a dark translucent background */
+  .navbar .navbar-collapse,
+  .navbar-collapse.show {
+    position: fixed !important;
+    top: 56px;
+    right: 8px;
+    left: auto;
+    width: 72%;
+    max-width: 340px;
+    min-width: 180px;
+    background-color: rgba(0,0,0,0.92);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+    z-index: 100001;
+    transform-origin: top right;
+  }
+  .navbar .navbar-collapse .nav-link,
+  .navbar-collapse.show .nav-link {
+    color: #ffffff;
+    text-align: right;
+  }
+
+  .Logo{
+    display:none;
+  }
+
+  /* Force hamburger to the right and ensure collapse panel is fixed to right */
+  .navbar .navbar-toggler {
+    margin-left: auto;
+    z-index: 100002;
+  }
+
+  .navbar .navbar-collapse { display: none !important; }
+  .navbar .navbar-collapse.show {
+    display: block !important;
+    position: fixed !important;
+    top: 56px !important;
+    right: 8px !important;
+    left: auto !important;
+    width: 72% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    background-color: rgba(0,0,0,0.92) !important;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+    padding: 12px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5) !important;
+    z-index: 100001 !important;
+    transform-origin: top right;
+  }
+  .navbar .navbar-collapse .nav-link,
+  .navbar-collapse.show .nav-link {
+    color: #ffffff;
+    text-align: center;
+  }
 }

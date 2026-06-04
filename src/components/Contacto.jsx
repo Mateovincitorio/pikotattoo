@@ -32,7 +32,7 @@ const Contacto = () => {
     <>
     <section id='contact'>
             <form className='formulario' onSubmit={handleSubmit}>
-                <h2>Contact Us</h2>
+                <h2>I want my quote</h2>
   <input name="name" type="text" placeholder='Name' required />
   <input name="size" type="number" placeholder='Tattoo size (cm)' required />
   <input name="style" type="text" placeholder='Tattoo style' required />

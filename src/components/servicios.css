@@ -41,7 +41,13 @@
 }
 
 .titulo-servicios{
-    font-size: 1.8rem;
+        font-size: clamp(1rem, 3vw, 1.8rem);
     overflow: hidden;
       font-family: 'Bebas Neue', sans-serif;
+}
+
+@media (max-width: 520px) {
+    .contenedor-servicios { padding: 24px 12px; gap: 14px; }
+    .tattoo-personalizado { padding: 18px 12px; }
+    .proceso-tattoo{display: none;}
 }

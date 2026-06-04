@@ -40,18 +40,16 @@
 }
 
 .title { 
+  font-size: clamp(2.8rem, 5vw, 4.2rem) !important;
   position: relative;
   color: #f6e4bf;
   margin: 0;
-  text-align: center !important;
    text-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
    font-family: 'Bebas Neue', sans-serif;
   font-weight: 500;
-  font-size: 6rem !important;
   line-height: 1.02;
   max-width: 85%;
   text-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
-  letter-spacing: 1px !important;
   white-space: normal;
   overflow-wrap: break-word;
   overflow: hidden;
@@ -135,7 +133,7 @@
 }
 
 .cta-button.animate__pulse {
-  animation: customPulse 2.5s infinite !important;
+  animation: customPulse 2.5s infinite;
 }
 
 .btns{
@@ -183,4 +181,87 @@
   color: #fff;
   width: 28px;
   height: 28px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .hero {
+    height: auto;
+    padding: 36px 18px;
+  }
+
+  .contenedor{
+    width: 100%;
+    padding: 8px 12px;
+    align-items: flex-start;
+  }
+
+  .imagen{
+    display: none; /* hide large image on smaller screens to prioritize content */
+  }
+
+  .title {
+    font-size: clamp(2.4rem, 6vw, 3.6rem);
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .subtitle {
+    text-align: left;
+    font-size: clamp(0.95rem, 2.2vw, 1.15rem);
+    max-width: 100%;
+  }
+
+  .btns{
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .cta-button, .no-bg {
+    padding: 12px 22px;
+    font-size: 0.95rem;
+  }
+
+  .whatsapp-btn {
+    right: 14px;
+    bottom: 14px;
+    width: 52px;
+    height: 52px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero {
+    padding: 28px 12px;
+  }
+
+  .title {
+    font-size: clamp(1.8rem, 8vw, 2.6rem);
+    line-height: 1.08;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    margin-top: 8px;
+  }
+
+  .cta-button, .no-bg {
+    width: 100%;
+    padding: 12px 18px;
+    justify-content: center;
+  }
+
+  .btns{
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .whatsapp-btn {
+    right: 12px;
+    bottom: 12px;
+    width: 48px;
+    height: 48px;
+  }
 }

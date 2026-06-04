@@ -255,3 +255,24 @@ code {
     @apply bg-background text-foreground;}
   html {
     @apply font-sans;}}
+
+/* Global responsive helpers */
+img, picture, video, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure main container shrinks on small screens */
+.container, .site-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (max-width: 520px) {
+  .container, .site-container { padding-left: 12px; padding-right: 12px; }
+}
