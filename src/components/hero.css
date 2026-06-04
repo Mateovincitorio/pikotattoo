@@ -4,10 +4,6 @@
 .hero {
   width: 100vw;
   height: 100vh;
-  /*background-image: url('/portadaOrig.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;*/
   background-color: #000;
   display: flex;
   flex-direction: row;
@@ -45,11 +41,11 @@
 
 .title { 
   position: relative;
-  left: -50px;
   color: #f6e4bf;
   margin: 0;
-  text-align: justify;
-  font-family: 'Bebas Neue', sans-serif;
+  text-align: center !important;
+   text-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+   font-family: 'Bebas Neue', sans-serif;
   font-weight: 500;
   font-size: 6rem !important;
   line-height: 1.02;
@@ -145,4 +141,46 @@
 .btns{
   display: flex;
   gap: 24px;
+}
+
+.cta-link {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.cta-link:visited {
+  color: inherit;
+}
+
+.whatsapp-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  border: none;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.14);
+}
+
+.whatsapp-btn .wsp-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.whatsapp-btn .wsp-icon {
+  color: #fff;
+  width: 28px;
+  height: 28px;
 }

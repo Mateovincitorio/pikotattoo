@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Bebas+Neue&family=Courgette&family=Inconsolata:wght@200..900&family=Oswald:wght@200..700&family=Playwrite+RO:wght@100..400&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Sekuya&display=swap');
+
+
+
+#contact {
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #110e13 0%, #221f29 55%, #352f42 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.formulario {
+  width: min(640px, 100%);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 28px;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(18px);
+  padding: 42px 34px;
+  display: grid;
+  gap: 18px;
+}
+
+.formulario h2 {
+  margin: 0;
+  color: #f6f1e8;
+  font-size: clamp(1.9rem, 2.2vw, 2.4rem);
+  letter-spacing: 0.02em;
+  text-align: center;
+  overflow: hidden;
+      font-family: 'Bebas Neue', sans-serif;
+
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  color: #f7f4ef;
+  padding: 18px 20px;
+  font-size: 1rem;
+      font-family: 'Bebas Neue', sans-serif;
+
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+  color: rgba(247, 244, 239, 0.7);
+      font-family: 'Bebas Neue', sans-serif;
+
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: #f4c4d7;
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-1px);
+}
+
+.formulario textarea {
+  min-height: 170px;
+  resize: vertical;
+}
+
+.file-upload {
+  display: grid;
+  gap: 10px;
+  color: #f6f1e8;
+  font-size: 0.98rem;
+}
+
+.file-upload span {
+  display: inline-block;
+  padding: 14px 18px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.file-upload {
+  display: grid;
+  gap: 10px;
+  color: #f6f1e8;
+  font-size: 0.98rem;
+  width: 100%;
+}
+
+.file-upload-field {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.file-upload-button{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 18px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #f7f4ef;
+  min-height: 52px;
+  width:100%;
+}
+
+.file-upload input[type="file"] {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.preview-image {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.formulario button {
+  width: fit-content;
+  align-self: center;
+  justify-self: center;
+  background: linear-gradient(135deg, #fd7b8c 0%, #ffb26a 100%);
+  border: none;
+  border-radius: 999px;
+  color: #1b0e16;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 16px 34px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.formulario button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(253, 123, 140, 0.32);
+}
+
+.formulario p {
+  margin: 0;
+  color: #f3e1cf;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 520px) {
+  .formulario {
+    padding: 28px 20px;
+  }
+
+  .formulario input,
+  .formulario textarea {
+    padding: 16px 16px;
+  }
+
+  .formulario button {
+    width: 100%;
+    justify-self: stretch;
+    padding: 16px;
+  }
+}
