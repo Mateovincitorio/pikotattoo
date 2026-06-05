@@ -21,7 +21,7 @@ const Contacto = () => {
 
         Message: ${mensaje}
         `
-        const url = `https://wa.me/543435209850?text=${encodeURIComponent(
+        const url = `https://wa.me/543518565461?text=${encodeURIComponent(
     message
   )}` 
     window.open(url, "_blank");

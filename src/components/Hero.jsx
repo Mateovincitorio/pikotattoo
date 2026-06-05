@@ -61,7 +61,7 @@ const Hero = () => {
         <div className="imagen">
           <img src='/portadaVert.png' alt="Portada" />
         </div>
-            <button type="button" className="whatsapp-btn"><a href='https://wa.me/543435209850?text=Hey!, I want to know more about your services' target='_blank' rel='noopener noreferrer' className="wsp-link"><FontAwesomeIcon icon={faWhatsapp} size='xl' className="wsp-icon" /></a></button>
+            <button type="button" className="whatsapp-btn"><a href='https://wa.me/543518565461?text=Hey!, I want to know more about your services' target='_blank' rel='noopener noreferrer' className="wsp-link"><FontAwesomeIcon icon={faWhatsapp} size='xl' className="wsp-icon" /></a></button>
       </div>
     </>
   )
