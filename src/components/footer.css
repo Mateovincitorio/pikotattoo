@@ -1,0 +1,19 @@
+.link{
+    color: rgb(208, 200, 92);
+    text-decoration: none;
+    font-weight:200;
+}
+
+.linea{
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: #737373;
+}
+
+.wsp-link{
+    color: rgb(208, 200, 92);
+    text-decoration: none;
+    font-weight:200;
+}

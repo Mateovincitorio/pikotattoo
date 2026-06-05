@@ -38,3 +38,82 @@
   .trabajos { padding: 0 14px; }
   .pWork { font-size: 1rem; }
 }
+
+.trabajos-mobile-menu {
+  margin-top: 40px;
+}
+
+.trabajos-mobile-menu-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.trabajos-category-button {
+  cursor: pointer;
+  width: 100%;
+  padding: 16px 18px;
+  border: 2px solid #f6e4bf;
+  background: rgba(246, 228, 191, 0.08);
+  color: #f6e4bf;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  text-align: left;
+  border-radius: 16px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.trabajos-category-button:hover,
+.trabajos-category-button:focus {
+  background: rgba(246, 228, 191, 0.15);
+  transform: translateX(2px);
+}
+
+.trabajos-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding-top: 100px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.trabajos-modal-content {
+  width: min(100%, 520px);
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #111111;
+  border: 1px solid rgba(246, 228, 191, 0.25);
+  border-radius: 24px;
+  padding: 24px;
+  position: relative;
+}
+
+.trabajos-modal-close {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  background: transparent;
+  border: none;
+  color: #f6e4bf;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.trabajos-modal-images {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.trabajos-modal-images img {
+  width: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}

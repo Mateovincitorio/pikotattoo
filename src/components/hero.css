@@ -197,7 +197,18 @@
   }
 
   .imagen{
-    display: none; /* hide large image on smaller screens to prioritize content */
+    display: block; /* show image on smaller screens */
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .imagen img{
+    max-width: 100%;
+    height: auto;
+    max-height: 60vh;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
   }
 
   .title {
