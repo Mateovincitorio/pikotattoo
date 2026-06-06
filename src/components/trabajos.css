@@ -105,6 +105,12 @@
   cursor: pointer;
 }
 
+.trabajos-modal-action {
+  width: 100%;
+  margin-top: 24px;
+  text-align: center;
+}
+
 .trabajos-modal-images {
   display: grid;
   gap: 14px;
@@ -116,4 +122,27 @@
   border-radius: 18px;
   object-fit: cover;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+
+.cta-button{
+  background: linear-gradient(135deg, rgba(254, 204, 117, 1), rgba(150, 54, 18, 0.98));
+  color: #040404;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  padding: 12px 18px;
+  border: 2px solid #f6e4bf;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+@media (max-width:520px) {
+  .drag-cards{
+    display: none;
+  }
 }

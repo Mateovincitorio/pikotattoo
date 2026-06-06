@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react'
 import CircularGallery from './CircularGallery.jsx'
 import './trabajos.css'
 
+//array para mapear las imagenes
 const categories = [
   {
     id: 'realismo',
-    title: 'Realismo',
+    title: 'Realism',
     images: [
       { image: '/realismo1.JPG' },
       { image: '/realismo2.JPG' },
@@ -55,45 +56,73 @@ const categories = [
     ]
   }
 ]
-
+//variable que dice cual es el tamaño de pantalla para mobile
 const MOBILE_QUERY = '(max-width: 520px)'
 
 const Trabajos = () => {
+  //seteo el estado de si es mobile o no
   const [isMobile, setIsMobile] = useState(false)
+  //seteo si la categoria esta activa
   const [activeCategory, setActiveCategory] = useState(null)
 
   useEffect(() => {
+    //comprueba si el ancho de la ventana es menor o igual a 520px.
     const mediaQuery = window.matchMedia(MOBILE_QUERY)
+    //evento que maneja el cambio de estado de isMobile (Actualiza el estado isMobile con ese valor mediante setIsMobile. a travez de la propiedad matches de event)
     const handleChange = event => setIsMobile(event.matches)
 
     handleChange(mediaQuery)
+    //si el addEventListener existe ( el tamaño es menos o igual a 520 px), agrega un addeventlistener con evento 'change'
     if (mediaQuery.addEventListener) {
+      //change es el evento
       mediaQuery.addEventListener('change', handleChange)
     } else {
+      //Si el navegador NO soporta addEventListener en media queries, entonces usa el método viejo addListener
       mediaQuery.addListener(handleChange)
     }
 
     return () => {
+      //si el addEventListener existe ( el tamaño es mayor a 520 px), elimina el addeventlistener con evento 'change'
       if (mediaQuery.removeEventListener) {
         mediaQuery.removeEventListener('change', handleChange)
       } else {
+        //Si el navegador NO soporta addEventListener en media queries, entonces usa el método viejo removeListener
         mediaQuery.removeListener(handleChange)
       }
     }
+    //se renderiza una sola vez al montar el componente
   }, [])
-
+  //“Recibo una categoría y la guardo como la categoría activa.”
   const openCategory = category => setActiveCategory(category)
+  //“Cerrar el modal eliminando la categoría activa.”
   const closeModal = () => setActiveCategory(null)
+
+  useEffect(() => {
+    const className = 'modal-open'
+
+    if (activeCategory) {
+      //si activeCategory es true, “Agrega una clase CSS al <body> del documento.” que seria "modal-open"
+      document.body.classList.add(className)
+    } else {
+      //si ya existe, la saca
+      document.body.classList.remove(className)
+    }
+
+    return () => {
+      document.body.classList.remove(className)
+    }
+    //se renderiza cuando cambia el estado de activeCategory
+  }, [activeCategory])
 
   return (
     <div className='trabajos'>
       <h1 className='h1Work' id='gallery'>Gallery</h1>
-      <p className='pWork'>(Drag the cards to left/right to see more!)</p>
+      <p className='pWork drag-cards'>(Drag the cards to left/right to see more!)</p>
 
       {isMobile ? (
         <>
           <div className='trabajos-mobile-menu'>
-            <p className='pWork'>Selecciona una categoría para ver las imágenes.</p>
+            <p className='pWork'>Select a category to see the images.</p>
             <div className='trabajos-mobile-menu-list'>
               {categories.map(category => (
                 <button
@@ -124,6 +153,9 @@ const Trabajos = () => {
                     />
                   ))}
                 </div>
+                <button className='trabajos-modal-action cta-button animate__animated animate__pulse no-bg' type='button' onClick={closeModal}>
+                  Close gallery
+                </button>
               </div>
             </div>
           )}
@@ -136,6 +168,8 @@ const Trabajos = () => {
           </div>
         ))
       )}
+          
+
     </div>
   )
 }
