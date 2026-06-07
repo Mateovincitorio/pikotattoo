@@ -102,4 +102,12 @@
     color: #ffffff;
     text-align: center;
   }
+
+  /* Make navbar itself transparent on small screens */
+  .navbar.navbar-sticky,
+  .navbar.navbar-sticky.scrolled,
+  .navbar-active {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
 }
