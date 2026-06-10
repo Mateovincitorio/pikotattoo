@@ -166,7 +166,6 @@
   border: none;
   box-shadow: 0 10px 30px rgba(37, 211, 102, 0.14);
 }
-
 .whatsapp-btn .wsp-link {
   display: inline-flex;
   align-items: center;
@@ -182,6 +181,34 @@
   width: 28px;
   height: 28px;
 }
+
+.instagram-btn {
+  position: fixed;
+  left:20px ;
+  bottom: 20px;
+  background-color: rgb(208, 200, 92);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  border: none;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.14);
+}
+.instagram-btn .ig-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
@@ -240,6 +267,7 @@
     width: 52px;
     height: 52px;
   }
+  
 }
 
 @media (max-width: 520px) {
@@ -272,6 +300,14 @@
   .whatsapp-btn {
     right: 12px;
     bottom: 12px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .instagram-btn {
+  right: 12px;
+  bottom: 72px; /* 48px del botón + 12px de separación */
+left:unset;
     width: 48px;
     height: 48px;
   }

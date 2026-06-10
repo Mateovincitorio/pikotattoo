@@ -8,6 +8,7 @@ import Servicios from './components/Servicios.jsx'
 import QuienSoy from './components/QuienSoy.jsx'
 import Contacto from './components/Contacto.jsx'
 import Footer from './components/Footer.jsx'
+import TattooDormido from './components/TattooDormido.jsx'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Servicios />
       <Trabajos />
       <QuienSoy />
+      <TattooDormido/>
       <Contacto />
       <Footer />
     </>

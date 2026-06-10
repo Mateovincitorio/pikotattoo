@@ -3,6 +3,9 @@ import './hero.css'
 import 'animate.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+
+
 
 const Hero = () => {
   const btnRef = useRef(null);
@@ -62,6 +65,12 @@ const Hero = () => {
           <img src='/portadaVert.png' alt="Portada" />
         </div>
             <button type="button" className="whatsapp-btn"><a href='https://wa.me/543518565461?text=Hey!, I want to know more about your services' target='_blank' rel='noopener noreferrer' className="wsp-link"><FontAwesomeIcon icon={faWhatsapp} size='xl' className="wsp-icon" /></a></button>
+            <button type="button" className="instagram-btn"><a href='https://www.instagram.com/studiopikotattoo/' target='_blank' rel='noopener noreferrer' className="ig-link"><FontAwesomeIcon
+                                    icon={faInstagram}
+                                    size='xl'
+                                    style={{ color: 'rgb(0, 0, 0)' }}
+                                  />
+                    </a></button>
       </div>
     </>
   )
