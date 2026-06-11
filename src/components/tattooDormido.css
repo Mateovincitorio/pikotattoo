@@ -105,10 +105,10 @@ LE DOY MENOS MARGEN A LAS FLECHAS
 }
 
 .carousel-control-prev {
-  left: 70px !important;
+  left: 80px !important;
 }
 
 .carousel-control-next {
-  right: 70px !important;
+  right: 80px !important;
 }
 }
