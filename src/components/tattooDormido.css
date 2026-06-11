@@ -99,4 +99,16 @@ LE DOY MENOS MARGEN A LAS FLECHAS
         margin:auto;
         border-radius: 30px;
     }
+    .carousel-control-prev,
+.carousel-control-next {
+  width: auto !important;
+}
+
+.carousel-control-prev {
+  left: 70px !important;
+}
+
+.carousel-control-next {
+  right: 70px !important;
+}
 }
