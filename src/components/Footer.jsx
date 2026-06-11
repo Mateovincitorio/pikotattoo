@@ -17,7 +17,7 @@ const Footer = () => {
                         style={{ color: 'rgb(208, 200, 92)' }}
                       />
         </a>
-        <a href='https://wa.me/543435209850?text=Hey!, I want to know more about your services' target='_blank' rel='noopener noreferrer' className="wsp-link">
+        <a href='https://wa.me/543518565461?text=Hey!, I want to know more about your services' target='_blank' rel='noopener noreferrer' className="wsp-link">
         <FontAwesomeIcon
                    icon={faWhatsapp}
                     style={{ color: 'rgb(208, 200, 92)' }}

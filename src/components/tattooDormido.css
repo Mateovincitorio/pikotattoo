@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Bebas+Neue&family=Courgette&family=Inconsolata:wght@200..900&family=Oswald:wght@200..700&family=Playwrite+RO:wght@100..400&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Sekuya&display=swap');
 
 
-.quienSoy{
+.tattooDormido{
     max-width: 1100px;
     margin: 0 auto;
     padding: 24px 18px;
@@ -10,7 +10,7 @@
 
 
 
-.quienSoy-body{
+.tattooDormido-body{
     overflow: hidden;
 }
 
@@ -43,6 +43,35 @@
     letter-spacing: 0.05em;
 }
 
+.h1dormido{
+    text-align: center;
+    font-size: clamp(1rem, 5vw, 2rem);
+    color: #f4ce83;
+
+}
+/* ESTILOS DEL CAROUSEL
+LE DOY MENOS MARGEN A LAS FLECHAS
+*/
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto !important;
+}
+
+.carousel-control-prev {
+  left: 350px !important;
+}
+
+.carousel-control-next {
+  right: 350px !important;
+}
+
+.carousel{
+ width:100%;
+    height: 50%;
+}
+
+
+
 @media (max-width: 760px) {
     .imgQuienSoy {
         float: none;
@@ -53,5 +82,21 @@
 
     .quienSoy{
         padding: 18px 14px;
+    }
+}
+
+.imgCarrousel{
+        width: 20%;
+        height: 20%;
+        margin:auto;
+        border-radius: 30px;
+    }
+
+@media (max-width:520px){
+    .imgCarrousel{
+        width: 50%;
+        height: 50%;
+        margin:auto;
+        border-radius: 30px;
     }
 }

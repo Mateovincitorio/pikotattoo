@@ -23,7 +23,7 @@ const Ubicacion = () => {
             <p className="color">Carrer de Joan Alcover, 36, Palma de Mallorca</p>
             <div className="maps">
 
-            <a href="https://www.google.com/maps/place/Tattoo+Pikotatto/@39.7182785,2.8885062,2346m/data=!3m2!1e3!5s0x1297c5c9eef7ce27:0x363cbd511f7a8e8f!4m10!1m2!2m1!1spiko+tattoo+mallorca!3m6!1s0x1297c5aabdd0e84f:0x35261b043dcdd7ff!8m2!3d39.7179154!4d2.9033549!15sChRwaWtvIHRhdHRvbyBtYWxsb3JjYVoWIhRwaWtvIHRhdHRvbyBtYWxsb3JjYZIBC3RhdHRvb19zaG9wmgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDIxc2JGTlhlREJYV0VKbVZHNWFOazFITVU1alZUQjNWVmhPYmxwWVl4QULgAQD6AQQIQRAz!16s%2Fg%2F11mrjg0mwj?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="color maps">
+            <a href="https://maps.app.goo.gl/puJpbGUqjwVKm66S9?g_st=iwb" target="_blank" rel="noopener noreferrer" className="color maps">
                 See on Google Maps
             </a>
             <FontAwesomeIcon icon={faArrowRight} style={{color: 'rgb(208, 200, 92)',}} /> 

@@ -31,12 +31,14 @@ const Navbar = () => {
   return (
     <nav className={`navbar navbar-expand-lg navbar-dark navbar-sticky ${scrolled ? 'scrolled' : ''}`}>
       <div className="container-fluid">
-        <a className="navbar-brand Logo" href="#"><img className='logoimg' src={logo} alt="Logo" /></a>
+        <a className ={ ` navbar-brand Logo ${scrolled ? 'scrolled' : ''}`} href="/"><img className='logoimg' src={logo} alt="Logo" /></a>
 
 {/*LEER PARA ENTENDER*/}
+{/*AGREGO EL BOTON CON LAS 3 RAYITAS*/}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
+        {/*ESTE ES EL MENU DEL BOTON DE LAS 3 RAYITAS*/}
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">

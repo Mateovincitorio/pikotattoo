@@ -57,18 +57,10 @@ const TattooDormido = () => {
   }, []);
 
   return (
-    <section className="quienSoy" id='about'>
-      <div className="quienSoy-body">
-        <img
-          data-aos="fade-left"
-          src="/tatuajedormido.JPEG"
-          alt=""
-          className='imgQuienSoy ladoderecho'
-          ref={imgRef}
-          onLoad={() => AOS.refresh()}
-        />
+    <section className="tattooDormido" id='about'>
+      <div className="tattooDormido-body">
         <div className="quienSoy-text " data-aos="fade-right">
-          <p className='pQuienSoy'>Tattooing Under Sedation</p>
+          <h1><p className='pQuienSoy h1dormido'>Tattooing Under Sedation</p></h1>
 
 <p className='pQuienSoy'>Tattooing under sedation is exactly what it sounds like: the client goes to sleep, and the work begins.
 
@@ -81,9 +73,33 @@ Medicine takes care of the body. Art takes care of the rest.
 It’s a collaboration between two worlds that rarely intersect, and the outcome speaks for itself.
 
 </p>
-
-          <button ref={btnRef} className="cta-button animate__animated animate__pulse"><a href="#contact" className="cta-link">Request a quote</a></button>
         </div>
+        <div id="carouselExampleFade" className="carousel slide carousel-fade" data-aos="fade-left" ref={imgRef}
+          onLoad={() => AOS.refresh()}>
+  <div className="carousel-inner">
+    <div className="carousel-item active">
+      <img src="/tatuajedormido.JPEG" className="d-block imgCarrousel " alt="..."/>
+    </div>
+    <div className="carousel-item">
+      <img src="/tattoodormido1.jpg" className="d-block imgCarrousel" alt="..."/>
+    </div>
+    <div className="carousel-item">
+      <img src="/tattoodormido3.JPEG" className="d-block imgCarrousel " alt="..."/>
+    </div>
+    <div className="carousel-item">
+      <img src="/tattoodormido4.JPEG" className="d-block imgCarrousel " alt="..."/>
+    </div>
+  </div>
+  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Previous</span>
+  </button>
+  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+    <span className="visually-hidden">Next</span>
+  </button>
+</div>
+        
       </div>
     </section>
   )

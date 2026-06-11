@@ -4,6 +4,10 @@
   height: 50px;
 }
 
+.Logo.scrolled {
+  display: none !important;
+}
+
 .navbar.navbar-sticky{
   position: fixed;
   top: 0;
@@ -36,13 +40,18 @@
 }
 
 @media (max-width: 900px) {
-  .nav-link { margin-left: 10px; font-size: clamp(0.9rem, 2.4vw, 1.2rem); }
-  .logoimg { display: none; }
+  .nav-link { 
+    margin-left: 10px; font-size: clamp(0.9rem, 2.4vw, 1.2rem); 
+  }
 }
 
 @media (max-width: 520px) {
-  .nav-link { display: block; margin: 8px 0; padding: 8px 12px; }
-  .navbar .container, .navbar .navbar-collapse { padding-left: 8px; padding-right: 8px; }
+  .nav-link {
+     display: block; margin: 8px 0; padding: 8px 12px;
+     }
+  .navbar .container, .navbar .navbar-collapse {
+     padding-left: 8px; padding-right: 8px;
+     }
   /* Mobile: make collapsed menu readable with a dark translucent background */
   .navbar .navbar-collapse,
   .navbar-collapse.show {
@@ -69,7 +78,7 @@
   }
 
   .Logo{
-    display:none;
+    display:block !important;
   }
 
   /* Force hamburger to the right and ensure collapse panel is fixed to right */
